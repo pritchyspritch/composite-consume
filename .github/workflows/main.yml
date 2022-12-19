@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: use-composite
-        uses: pritchyspritch/composite-test@v0.02
+        uses: pritchyspritch/composite-test@v0.04
