@@ -1,0 +1,15 @@
+name: Composite Zap Caller
+
+on:
+  push:
+    branches: [ main ]
+  workflow_call:
+
+jobs:
+  zap-auth-scan:
+    runs-on: ubuntu-latest
+    name: A composite caller
+    steps:
+      - uses: actions/checkout@v3
+      - id: use-composite
+        uses: pritchyspritch/composite-test@v0.01
